@@ -1,0 +1,71 @@
+==
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>{{ this.page.title }} | {{ this.theme.config.name }}</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="title" content="{{ this.page.meta_title }}">
+        <meta name="description" content="{{ this.page.meta_description }}">
+        <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}" />
+        <link rel="stylesheet" href="{{ getVersionedCss('/public/css/theme.css') }}" />
+        <script type="text/javascript" src="{{ getVersionedCss('/public/js/theme.js') }}"></script>
+    </head>
+    <body class="theme-{{ this.theme.id }}">
+        <header class="main-header">
+            <div class="uk-navbar-container">
+                <div class="uk-container">
+                    <nav class="uk-navbar" uk-navbar>
+                        <div class="uk-navbar-left">
+                            <a class="uk-navbar-item uk-logo" href="{{ 'home' | page }}">
+                                {{ this.theme.config.name }}
+                            </a>
+                        </div>
+                        <div class="uk-navbar-right">
+                            <ul class="uk-navbar-nav">
+                                <li>
+                                    <a href="{{ 'home' | page }}">
+                                        Home
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            {% page %}
+        </main>
+        <footer class="main-footer">
+            <div class="uk-container">
+                <div class="uk-grid uk-grid-divider uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                        <p class="uk-text-meta">&copy 2019 {{ this.theme.config.name }}</p>
+                    </div>
+                    <div class="uk-width-expand">
+                        <nav class="footer-nav">
+                            <ul class="uk-subnav uk-margin-remove-bottom">
+                                <li>
+                                    <a href="#">About</a>
+                                </li>
+                                <li>
+                                    <a href="#">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="#">Contact</a>
+                                </li>
+                                <li>
+                                    <a href="#">Terms</a>
+                                </li>
+                                <li>
+                                    <a href="#">Privacy</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
