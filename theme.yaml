@@ -1,7 +1,7 @@
 name: My Theme
 description: Just a blank theme with UIkit and Vue.js
-author: Ompmega
-homepage: https://ompmega.com
+author: Daniel Ramirez
+homepage: https://github.com/drmzio
 code: oc-theme
 require:
   - Rebel59.MixManifest
