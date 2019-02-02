@@ -8,8 +8,13 @@
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="description" content="{{ this.page.meta_description }}">
         <link rel="icon" type="image/png" href="{{ 'assets/images/october.png' | theme }}" />
-        <link rel="stylesheet" href="{{ getVersionedCss('/public/css/theme.css') }}" />
-        <script type="text/javascript" src="{{ getVersionedCss('/public/js/theme.js') }}"></script>
+        <link rel="stylesheet" href="{{ mix('/public/css/theme.css') }}" />
+        {% styles %}
+
+        <script src="{{ 'assets/javascript/jquery.js' | theme }}"></script>
+        <script type="text/javascript" src="{{ mix('/public/js/manifest.js') }}"></script>
+        <script type="text/javascript" src="{{ mix('/public/js/vendor.js') }}"></script>
+        {% framework %}
     </head>
     <body class="theme-{{ this.theme.id }}">
         <header class="main-header">
@@ -25,7 +30,20 @@
                             <ul class="uk-navbar-nav">
                                 <li>
                                     <a href="{{ 'home' | page }}">
+                                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
                                         Home
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ 'page' | page }}">
+                                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: nut"></span>
+                                        Page
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="{{ 'elements' | page }}">
+                                        <span class="uk-icon uk-margin-small-right" uk-icon="icon: world"></span>
+                                        Elements
                                     </a>
                                 </li>
                             </ul>
@@ -67,5 +85,7 @@
                 </div>
             </div>
         </footer>
+        <script type="text/javascript" src="{{ mix('/public/js/theme.js') }}"></script>
+        {% scripts %}
     </body>
 </html>

@@ -1,4 +1,7 @@
 {
-    "/public/js/theme.js": "/public/js/theme.js?id=b44617d6c5702da3a59c",
-    "/public/css/theme.css": "/public/css/theme.css?id=96e93f5d292131f08eee"
+    "/public/js/manifest.js": "/public/js/manifest.js?id=5343884d925e6c3823f7",
+    "/public/js/theme.js": "/public/js/theme.js?id=48df9ba61ad5bd7788e1",
+    "/public/css/theme.css": "/public/css/theme.css?id=f0fb846e5a62d843d65b",
+    "/public/js/vendor.js": "/public/js/vendor.js?id=ec5f23cfdeb948be3c2b",
+    "/public/images/october.png": "/public/images/october.png?id=e2a8416e519b160ff788"
 }

@@ -13,9 +13,18 @@ let mix = require('laravel-mix');
 
 mix.options({ processCssUrls: false });
 
-mix.setPublicPath('assets/');
+mix.setPublicPath('assets');
 
-mix.js('./assets/js/theme.js', 'assets/public/js');
-mix.sass('./assets/scss/theme.scss', 'assets/public/css');
+mix.sass('assets/resources/scss/theme.scss', 'public/css');
+
+mix.js('assets/resources/js/theme.js', 'public/js')
+    .extract(['jquery', 'uikit']);
+
+mix.copy('assets/resources/images/october.png', 'assets/public/images');
+
+mix.autoload({
+    jquery: ['$', 'window.jQuery'],
+    uikit: ['window.UIkit']
+});
 
 mix.version();
