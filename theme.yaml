@@ -1,7 +1,8 @@
 name: My Theme
 description: Just a blank theme with UIkit 3 and Vue.js
-author: Daniel Ramirez
-homepage: https://github.com/drmzio
+author: Ompmega
+homepage: https://github.com/ompmega
+previewImage: assets/theme-preview.png
 code: oc-theme
 require:
   - Ompmega.MixHelper
