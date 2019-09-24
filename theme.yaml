@@ -1,5 +1,5 @@
-name: October
-description: 'Just a blank theme with UIkit 3 and Vue.js'
+name: My Theme
+description: 'Just a bare-bones UIkit OctoberCMS theme w/ Laravel Mix support'
 author: Ompmega
 homepage: 'https://github.com/ompmega'
 code: oc-theme
