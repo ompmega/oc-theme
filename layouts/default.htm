@@ -7,8 +7,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="title" content="{{ this.page.meta_title }}">
         <meta name="description" content="{{ this.page.meta_description }}">
-        <link rel="icon" type="image/png" href="{{ 'assets/public/images/october.png' | theme }}" />
-        <link rel="stylesheet" href="{{ mix('/public/css/theme.css') }}" />
+        <link rel="icon" type="image/png" href="{{ 'assets/public/images/october.png'|theme }}">
+        <link rel="stylesheet" href="{{ mix('/public/css/theme.css') }}">
         {% styles %}
 
         <script type="text/javascript" src="{{ mix('/public/js/manifest.js') }}"></script>
@@ -20,26 +20,26 @@
                 <div class="uk-container">
                     <nav class="uk-navbar" uk-navbar>
                         <div class="uk-navbar-left">
-                            <a class="uk-navbar-item uk-logo" href="{{ 'home' | page }}">
+                            <a class="uk-navbar-item uk-logo" href="{{ 'home'|page }}">
                                 {{ this.theme.config.name }}
                             </a>
                         </div>
                         <div class="uk-navbar-right">
                             <ul class="uk-navbar-nav">
                                 <li>
-                                    <a href="{{ 'home' | page }}">
+                                    <a href="{{ 'home'|page }}">
                                         <span class="uk-icon uk-margin-small-right" uk-icon="icon: home"></span>
                                         Home
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ 'page' | page }}">
+                                    <a href="{{ 'page'|page }}">
                                         <span class="uk-icon uk-margin-small-right" uk-icon="icon: nut"></span>
                                         Page
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="{{ 'elements' | page }}">
+                                    <a href="{{ 'elements'|page }}">
                                         <span class="uk-icon uk-margin-small-right" uk-icon="icon: world"></span>
                                         Elements
                                     </a>
@@ -53,14 +53,14 @@
         <main class="main-content">
             {% page %}
         </main>
-        <footer class="main-footer">
+        <footer class="main-footer uk-section uk-section-small">
             <div class="uk-container">
                 <div class="uk-grid uk-grid-divider uk-flex-middle" uk-grid>
                     <div class="uk-width-auto">
                         <p class="uk-text-meta">&copy 2019 {{ this.theme.config.name }}</p>
                     </div>
                     <div class="uk-width-expand">
-                        <nav class="footer-nav">
+                        <nav>
                             <ul class="uk-subnav uk-margin-remove-bottom">
                                 <li>
                                     <a href="#">About</a>
@@ -84,7 +84,6 @@
             </div>
         </footer>
         <script type="text/javascript" src="{{ mix('/public/js/theme.js') }}"></script>
-        {% framework %}
         {% scripts %}
     </body>
 </html>

@@ -1,3 +1,7 @@
+1.2.0:
+  - Bump UIkit version to 3.2
+  - Clean up custom SASS
+  - Replace old UIkit heading classes
 1.1.1: Fix console errors + Cleaner boilerplate JS
 1.1.0: Better structure + New Mix plugin required
 1.0.0: Theme initialization

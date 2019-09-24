@@ -1,8 +1,8 @@
-name: My Theme
-description: Just a blank theme with UIkit 3 and Vue.js
+name: October
+description: 'Just a blank theme with UIkit 3 and Vue.js'
 author: Ompmega
-homepage: https://github.com/ompmega
-previewImage: assets/theme-preview.png
+homepage: 'https://github.com/ompmega'
 code: oc-theme
+previewImage: assets/theme-preview.png
 require:
-  - Ompmega.MixHelper
+    - Ompmega.MixHelper
